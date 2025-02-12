@@ -1,4 +1,4 @@
-#! /bin/python
+qaz#! /bin/python
 # Name:        demo_collections_generator_functions.py
 # Author:      QA2.0, Donald Cameron
 # Revision:    v1.0
@@ -29,7 +29,10 @@ def generate_numbers():
 
 def generate_numbers2():
     """ GENERATE one object/number at a time = Lazy List
-        using a return and list comprehension, eek! """
+        using a return and list comprehension, eek!
+        Generator comrehensions use () instead of []
+        like list comprehensions
+        """
     print("Executing generate numbers2()..")
     return ( x for x in range(0, 10) if x%2==0 )
 

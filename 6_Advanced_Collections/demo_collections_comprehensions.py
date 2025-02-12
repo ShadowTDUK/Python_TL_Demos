@@ -7,6 +7,13 @@
 """
     Filter collections of cites into warm cities in Celsius.
 """
+# literal syntax
+breakfast_list = ['yoghurt', 'green tea', 'fruit']
+lunch_tuple = ('soup', 'sandwich')
+
+# function call syntax
+lunch_list = list(lunch_tuple)
+
 
 import sys
 
@@ -52,7 +59,7 @@ def main():
     print(f"4.Warm Cities = {wee_names}")
 
     # For Loop plus source collection, optional if condition, and expression. LIST comprehension.
-    warm_cities = [ weather[city] for city in weather if weather[city] >= 15 ]
+    warm_cities = [weather[city] for city in weather if weather[city] >= 15]
     print(f"5.Warm Cities = {warm_cities}")
 
     # For Loop plus source collection, optional if condition, and expression. TUPLE comprehension.
@@ -66,6 +73,8 @@ def main():
     # For Loop plus source collection, optional if condition, and expression. SET comprehension.
     warm_cities = { city for city in weather if weather[city] >= 15 }
     print(f"5.3.Warm Cities = {warm_cities}")
+
+    #fast_cars = {cars: top_speed[car] for top_speed in cars if top_speed[car] > 120}
 
     return None
 

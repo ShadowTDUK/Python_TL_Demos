@@ -1,0 +1,3 @@
+
+class NegativeAmountException(Exception):
+    pass
