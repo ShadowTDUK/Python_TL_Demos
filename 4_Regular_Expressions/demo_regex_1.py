@@ -25,8 +25,8 @@ def main():
         # m = re.search(r"[aeiou][aeiou][aeiou]", line)  # Match 3 consecutive vowels.
         # m = re.search(r"[aeiou]{5}", line)  # Match at least 5 consecutive vowels.
         # m = re.search(r"^...................$", line)  # Match 19 chars.
-        m = re.search(r"^.{19}$", line)  # Match 19 char lines.
-        # m = re.search(r"^(.)(.).\2\1$", line)  # Match lines 5 char palindromes.
+        # m = re.search(r"^.{19}$", line)  # Match 19 char lines.
+        m = re.search(r"^(.)(.).\2\1$", line)  # Match lines 5 char palindromes.
         # m = re.match(r"(.)(.).\2\1$", line)  # Match 5 char palindromes using match().
         # m = re.search(r"^(.).*\1$", line)  # Match lines starting/ending with same char.
 
